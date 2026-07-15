@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nico Espiritu - PORTFOLIO</title>
+  <title>Nico Espiritu — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- SIDEBAR (this is the whole nav now — desktop: fixed panel, mobile: slide-in drawer) -->
+
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-top">
-      <img src="profile.png" alt="Nico Espiritu" class="profile-photo">
-      <div class="logo" id="sidebar-logo">Nico Espiritu</div>
       <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+      <div class="profile-frame">
+        <img src="profile.png" alt="Nico Espiritu" class="profile-photo">
+      </div>
+      <div class="logo" id="sidebar-logo">Nico Espiritu</div>
+      <p class="logo-sub">Web Developer</p>
     </div>
 
     <nav class="nav-links">
@@ -31,10 +37,10 @@
     <div id="sidebar-socials" class="social-links"></div>
   </aside>
 
-  <!-- Backdrop shown behind the drawer on mobile -->
+
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-  <!-- Small top bar, mobile only: just a menu button so people can open the sidebar -->
+
   <div class="mobile-topbar">
     <span id="mobile-topbar-name">Nico Espiritu</span>
     <button class="hamburger" id="hamburger" aria-label="Open navigation">&#9776;</button>
@@ -42,15 +48,25 @@
 
   <main>
     <section id="home" class="hero">
-      <p class="eyebrow">Portfolio</p>
+      <p class="eyebrow">Portfolio — 2026</p>
       <h1 id="hero-name">NICO ESPIRITU</h1>
-      <h2 id="hero-role">Future IT Senior Dev</h2>
+      <h2 id="hero-role" class="hero-role">Future IT Senior Dev</h2>
       <p id="hero-tagline">I Can Do All Things through Christ Who Strengthens Me</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
     </section>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>I am an aspiring IT professional studying core front and back end development technologies.</p>
+      <p>I'm an IT student at MIT College of Science and Technology, working my way toward a career as a senior web developer. My focus right now is on building solid fundamentals across the front and back end — from HTML, CSS, and JavaScript through to Java, C++, and Python — so I can move comfortably between how a site looks and how it actually works.</p>
+      <p>I like projects that force me to finish what I start: shipping something small and working beats a big idea that never leaves the drafting table. Outside of coursework, I keep sharpening my Git workflow and design sense in Figma, and I try to bring the same discipline to my faith as I do to my code.</p>
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">Studying</span><span class="fact-value">Web Development, MIT College of Science and Technology</span></div>
+        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Full-Stack Web Development</span></div>
+        <div class="fact"><span class="fact-label">Certified in</span><span class="fact-value">Web Design (TESDA, 2025)</span></div>
+      </div>
     </section>
 
     <section id="skills">
@@ -78,14 +94,20 @@
       <h2>Get In Touch</h2>
       <p>Want to collaborate? Send me a message below.</p>
       <form id="contact-form" action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
 
         <button type="submit">Send Message</button>
       </form>
