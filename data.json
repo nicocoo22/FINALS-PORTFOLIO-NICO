@@ -17,7 +17,7 @@
       "title": "codes",
       "description": "my codes",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "image": "https://placehold.co/600x338/6b7a3f/f5f1e3?text=RANDO",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiTPs4Kws2DUBB9NlmRIMdL98IqRayIPhP5CkIjDjMg&s=10",
       "link": "https://github.com/nicocoo22/compro2nico/tree/main/activity8"
     },
     {
@@ -25,7 +25,7 @@
       "title": "codes",
       "description": "....",
       "tags": ["HTML", "CSS"],
-      "image": "https://placehold.co/600x338/6b7a3f/f5f1e3?text=To-Do+App",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiTPs4Kws2DUBB9NlmRIMdL98IqRayIPhP5CkIjDjMg&s=10",
       "link": "https://github.com/nicocoo22/webdev1/tree/main/activity11"
     }
   ],
@@ -42,9 +42,9 @@
     {
       "id": 1,
       "title": "Web Development",
-      "institution": "LORMA COLLEGES",
+      "institution": "MIT College of Science and Technology",
       "period": "2025 - Present",
-      "description": "Desciplined and a student who is always ready to listen"
+      "description": "I CAN DO EVERYTHING YOU PLEASE"
     }
   ]
 }
