@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   closeBtn.addEventListener('click', closeSidebar);
   overlay.addEventListener('click', closeSidebar);
 
-  // Tapping a nav link should close the mobile drawer so it doesn't cover the page
+
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       closeSidebar();
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML += `
         <article class="timeline-item">
           <h3>${cert.title}</h3>
-          <strong>${cert.issuer}</strong> | <span>${cert.date}</span>
+          <div class="meta"><strong>${cert.issuer}</strong><span>${cert.date}</span></div>
           <p>${cert.description}</p>
         </article>
       `;
@@ -141,14 +141,14 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML += `
         <article class="timeline-item">
           <h3>${edu.title}</h3>
-          <strong>${edu.institution}</strong> | <span>${edu.period}</span>
+          <div class="meta"><strong>${edu.institution}</strong><span>${edu.period}</span></div>
           <p>${edu.description}</p>
         </article>
       `;
     });
   }
 
-  // Highlight the current section's link in the sidebar as the user scrolls
+
   const sections = document.querySelectorAll('main section[id]');
   const sidebarLinks = document.querySelectorAll('.nav-links a');
 
